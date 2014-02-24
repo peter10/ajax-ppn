@@ -1,0 +1,22 @@
+
+#header {
+	background: #bbcc32 url(../images/header_iih.png) no-repeat 20px top;
+	background: #bbcc32 url(../images/intrepid.jpg) no-repeat 20px top;
+}
+
+#search_criteria {
+	background-color: #BACB31;
+}
+
+#header h1, #search_criteria h3, #search_criteria dt, #search_criteria dd, #search_wrapper h3, #physician_list h4 {
+	color: #67711B;
+}
+
+#physician_list a {
+	color: #E45535
+}
+
+#footer {
+	color: white;
+	background-color: #BACB31;
+} 

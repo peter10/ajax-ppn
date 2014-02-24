@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/iih.css" />
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.scrollTo.js"></script>
+<script type="text/javascript" src='js/ppn.js'></script>
+</head>
+
+<body>
+
+<div id="header">
+	<h1>Health Care Facility Search</h1>
+</div>
+
+<div id="search_criteria">
+	<h3>You searched:</h3>
+	<dl>
+		<dt>Type of Facility:</dt><dd id="type_of_facility_display"></dd>
+
+		<dt>Distance:</dt><dd id="distance_display"></dd>
+	</dl>
+</div>
+
+<div id="map_canvas">loading...</div>
+
+<div id="search_wrapper">
+	<h3 id="search_results_header">Search Results</h3>
+	<ul id="physician_list"></ul>
+	
+	<h3>Refine Your Search</h3>
+
+<div id="controls">
+<label><b>Type of Facility:</b>
+	<select id="provider_type">
+	</select>
+
+</label>
+<label><b>Distance (km):</b>
+	<select id="search_radius">
+		<option value="1">1</option>
+		<option value="5">5</option>
+		<option value="10">10</option>
+		<option value="25">25</option>
+		<option value="100">100</option>
+	</select>
+</label>
+<input type="submit" value="search" class="search" />
+</div>
+</div>
+
+<div id="footer">
+DISCLAIMER: Ingle International has created this list for your convenience only and does not recommend the services of any specific physician or other medical service provider. We assume no responsibility or liability for the professional ability or reputation of, or the quality of services provided by, the medical professionals, medical facilities or pharmacies whose names appear in the following network. Names are listed alphabetically and/or by geographical proximity, and the order in which they appear has no other significance. Professional credentials and areas of expertise indicated here reflect the information provided directly by the medical professionals, facilities and pharmacies.
+</div>
+
+</body>
+</html>

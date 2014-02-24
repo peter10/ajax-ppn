@@ -1,0 +1,179 @@
+
+body, html {
+	padding: 0; margin: 0;
+	font-family: "Lucida Grande","Bitstream Vera Sans",Arial,sans-serif;
+	font-size: 12px;
+}
+
+/***	header ***/
+#header {
+	height: 90px;
+	background: white url(../images/header.png) no-repeat 20px top;
+}
+#header h1, #header h2 {
+	margin: 0;
+	color: #131466;
+	position: absolute;
+	right: 20px;
+}
+#header h1 {
+	top: 40px;
+	font-weight: bolder;
+	font-size: 26px;
+}
+#header h2 {
+	top: 10px;
+	font-weight: normal;
+	font-size: 18px;
+}
+
+/*** 'You Searched' bar ***/
+#search_criteria {
+	background-color: #eee;
+	padding: 8px 0 8px 20px;
+	margin-bottom: 18px;
+}
+
+#search_criteria h3, #search_criteria dl, #search_criteria dt, #search_criteria dd {
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+
+#search_criteria h3 {
+	font-size: 16px;
+	color: #131466;
+	padding-right: 14px;
+}
+
+#search_criteria dt {
+	font-size: 14px;
+	font-weight: bold;
+	color: #333;
+	padding-right: 5px;
+}
+
+#search_criteria dd {
+	font-size: 14px;
+	color: #333;
+	padding-right: 10px;
+}
+
+/*** map ***/
+ #map_canvas {
+	height: 625px;
+	margin: 0 20px 20px 340px;
+}
+
+/*** left column ***/
+#search_wrapper {
+	position: absolute;
+	width: 300px;
+	left: 20px;
+	top: 144px;
+	border: 1px none #ddd;
+	font-size: 13px;
+}
+#search_wrapper b {
+	color: #333;
+}
+
+#search_wrapper h3 {
+	margin: 0;
+	padding: 8px 0 8px 15px;
+	font-size: 16px;
+	color: #0f1760;
+	background-color: #d3e01f;
+	border: 1px solid #ddd;
+	border-bottom: none;
+}
+
+ul#physician_list {
+	margin: 0 0 10px 0;
+	padding: 0;
+	list-style: none;
+	height: 435px;
+	overflow: scroll;
+	overflow-x: auto;
+	border: 1px solid #ddd;
+	border-top: none;
+}
+#physician_list li {
+	/*** moved stylings into a div to accommadate chrome/safari bug. Borders on li only showed up after hovering ***/
+	padding: 5px 10px;
+	margin: 0px;
+	border-bottom: 1px solid #ddd;
+}
+#physician_list li div {
+
+}
+#physician_list li:last-child {
+	border: none;
+}
+#physician_list li:hover {
+	background-color: #faffaf;
+	background-color: #ffffdf;
+	cursor: pointer;
+}
+#physician_list li.hover { /* for ie6 */
+	background-color: #faffaf;
+	background-color: #ffffdf;
+	cursor: pointer;
+}
+#physician_list li.active {
+	background-color: #eaecf8;
+	cursor: default;
+}
+#physician_list h4 {
+	margin: 0;
+	color: #131466;
+	font-size: 13px;
+}
+
+#physician_list li.error, #physician_list li.error:hover {
+	color: #a00;
+	background-color: white;
+}
+
+#controls {
+	border: 1px solid #ddd;
+	border-top: none;
+	height: 95px;
+	text-align: center;
+	padding-top: 10px;
+}
+
+#controls label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+/*** FF hack ***/
+#controls label, x:-moz-any-link {
+	margin-bottom: 10px;
+}
+
+#controls input.search {
+	background-image: url(../images/search_button.png);
+	display: block;
+	width: 96px;
+	height: 26px;
+	border: none;
+	padding: none;
+	margin: 0 auto;
+	text-indent: 10000px;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+/*** footer ***/
+#footer {
+	color: #919191;
+	background-color: #f0f0f0;
+	padding: 10px 20px 10px 20px;
+/*	font-variant: small-caps; */
+} 
+#footer span {
+	font-size: 18px;
+	font-variant: small-caps;
+}
